@@ -6,14 +6,36 @@
   }
 
   body{
-	  background-color: #F0F0F0;
+	  background-image: url(../assets/fundo.jpg);
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
 	  font-family: Comic sans-serif, sans-serif;
 	  margin: 0;
+
 	
 	}
 	
+	.page{
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contact-page{
+		background-color: bisque;
+		height: 8rem;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 8px;
+		padding: 8px;
+	}
+
 	header{
-		background-color: #C78C5B;
+		background-color: rgba(44, 13, 50, 0.8);
 		color: #fff;
 		text-align: center;
 		align-items: center;
@@ -26,7 +48,7 @@
 	}
 
 a{
-	color: #ff0000;
+	color: blue;
 	font-weight: bold;
 	font-size: 1.2em;
 }
@@ -34,30 +56,36 @@ a{
 
 
 span{
-	color: #C78C5B;
+	color: pink;
 	font-weight: bold;
 	font-size: 1.2em;
 }
 
+.wrapper{
+	padding-top: 4rem;
+}
+
 .content{
-	width: 90%;
 	max-width: 1100px;
-	margin: 0 auto;
+	margin: 0 auto;	
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	gap: 20px;
+	justify-content: center;
 	flex-direction: row;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
 }
 
 .content-pic{
-	max-width: 600px;
+	max-width: 360px;
+	border-radius: 8px;
 	height: auto;
 }
 
 .text{
 	display: flex;
 	flex-direction: column;
+	padding: 16px;
 }
 
 video{
@@ -75,12 +103,14 @@ video{
 .contact{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
+	padding-top: 8px;
+	
 }
 
 .contact-button{
-	background-color: #C78C5B;
-	color: #fff;
+	background-color: white;
+	color: #55165e;
 	margin-top: 8px;
 	margin-bottom: 8px;
 	border: none;
@@ -89,4 +119,11 @@ video{
 	height: 3rem;
 	width: 10rem;
 
+}
+
+.contact-button:hover{
+	background-color: #55165e;
+	color: white;
+	border: 1px solid white;
+	transition: 0.2s;
 }
